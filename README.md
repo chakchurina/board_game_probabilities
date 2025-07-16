@@ -54,7 +54,7 @@ For $X=3$ and $y=5$ we can calculate it manually:
 
 According to the formula above:
 
-$$f_3(5) = \frac{6}{216} = \frac{1}{36} \approx 0.28$$
+$$f_3(5) = \frac{6}{216} = \frac{1}{36} \approx 0.028$$
 
 For larger $X$, enumerating all combinations by hand is impractical ($6^{15}$ combinations for $X=15$). To handle this, I used dynamic programming to compute the number of ways to obtain each sum $N$.
 
