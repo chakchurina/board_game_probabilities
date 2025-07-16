@@ -4,7 +4,7 @@
 
 There is a circular board game with 14 spaces, each containing a prize. The player starts on the Start (space 14) and rolls a standard six-sided die $X$ times. After all rolls, the total sum of the dice is $N$. The player then moves clockwise $N$ spaces from the Start position and receives the prize on the space where they land. Each prize has a different value.
 
-<img src="attachment:game_field.png" width="300">
+<img src="images/game_field.png" width="300">
 
 Calculate the probability of landing on each prize for different numbers of rolls:
 - when the player rolls 3 dice ($X = 3$)
@@ -85,7 +85,7 @@ Let’s look at how the distribution changes as the number of dice rolls $X$ inc
 - For $X=3$, the expected value shifts to $E[N] = 3 \times 3.5 = 10.5$, and the distribution continues to concentrate around the mean.
 - But as $X$ grows, the player repeatedly walks the 14 circular cells, so the probabilities across the cells gradually even out and tend toward a uniform distribution for large $X$.
 
-<img src="attachment:distributions.png" width="300">
+<img src="images/distributions.png" width="900">
 
 So, in practice, if we are aiming for a specific cell, the optimal strategy is to pick $X$ such that the expected value $E[N]=3.5X$ lands close to that cell. For example:
 
