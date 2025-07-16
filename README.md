@@ -42,7 +42,8 @@ Let’s say we want to land on position 5, i.e., $f_X(5)$. Then we need such $N$
 - for $X=4$, $N \in [4, 24]$, the suitable values of $N$ are 5 and 19.
 
 To find the final probability of landing on cell $y$, we have to sum the probabilities of all suitable $N$:
-$$f_X(y) = \sum_{\substack{N = X \\ (13 + N) \bmod 14 + 1 = y}}^{6X} \frac{\text{number of ways to roll sum } N}{6^X}$$
+
+$$ f_X(y) = \sum_{N=X}^{6X} \frac{\#\text{(ways to get sum }N)}{6^X}, \quad \text{where }(13+N)\bmod14+1=y $$
 
 That is, we iterate over all possible sums $N$ and sum those probabilities $P(N)$ for which the condition of landing on cell $y$ is satisfied.
 
